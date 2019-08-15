@@ -2,6 +2,7 @@ library chmod;
 
 import 'dart:io';
 
+/// handle arguments
 List<String> getArgs(String filename, mode) {
   if (mode is num) {
     mode = mode.toString();
@@ -15,9 +16,10 @@ List<String> getArgs(String filename, mode) {
   return [];
 }
 
+/// run chmod command
 Future chmod(String filename, String mode) async {
   List<String> args = getArgs(filename, mode);
-  if (args.length > 0) {
+  if (args.isNotEmpty) {
     return await Process.run('chmod', args);
   }
 }

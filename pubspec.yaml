@@ -1,6 +1,6 @@
 name: chmod
-description: writing chmod command in Dart.
-version: 0.0.1
+description: Provides utility functions for running "chmod" command in Dart.
+version: 0.1.0
 author: hunnble <hunnnble@gmail.com>
 homepage: https://github.com/hunnble/chmod
 
